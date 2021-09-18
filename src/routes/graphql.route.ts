@@ -59,8 +59,9 @@ class GraphqlRoute implements Routes {
   }
 
   private initializeRoutes() {
+    console.log('object');
     this.router.use(
-      '',
+      this.path,
       graphqlHTTP({
         graphiql: true,
         schema: this.schema,
