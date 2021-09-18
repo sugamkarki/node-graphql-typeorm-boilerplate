@@ -33,8 +33,8 @@
       "@routes/*": ["routes/*"],
       "@services/*": ["services/*"],
       "@utils/*": ["utils/*"],
-      "@schema":["schema/*"],
-      "@resolvers":["resolvers/*"]
+      "@schema/*":["schema/*"],
+      "@resolvers/*":["resolvers/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.json", ".env"],
