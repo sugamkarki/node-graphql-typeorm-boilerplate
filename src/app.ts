@@ -14,6 +14,7 @@ import { dbConnection } from '@databases';
 import { Routes } from '@interfaces/routes.interface';
 import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
+
 class App {
   public app: express.Application;
   public port: string | number;
@@ -44,9 +45,7 @@ class App {
   }
 
   private connectToDatabase() {
-    createConnection(dbConnection).then(res => {
-      console.log('connected');
-    });
+    createConnection(dbConnection);
   }
 
   private initializeMiddlewares() {
@@ -62,7 +61,6 @@ class App {
 
   private initializeRoutes(routes: Routes[]) {
     routes.forEach(route => {
-      this.app.use('/graphql', route.router);
       this.app.use('/', route.router);
     });
   }
