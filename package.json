@@ -1,9 +1,16 @@
 {
-  "name": "boilerplate",
-  "version": "0.0.0",
-  "description": "TypeScript + TypeORM + PostgreSQL + Express API Server",
+  "name": "express-graphql-typeorm-typescript-starter",
+  "version": "1.0.0",
+  "description": "This starter package uses typescript with express, graphql and typeorm for database mapping.",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "typeorm",
+    "graphql",
+    "express",
+    "node"
+  ],
   "scripts": {
     "start": "npm run build && cross-env NODE_ENV=production node dist/server.js",
     "dev": "cross-env INLINE_RUNTIME_CHUNK=false NODE_ENV=development nodemon",
@@ -76,5 +83,13 @@
     "prettier": "^2.3.2",
     "supertest": "^6.1.3",
     "tsconfig-paths": "^3.10.1"
-  }
+  },
+  "repository": {
+    "type":"git",
+    "url":"git@github.com:sugamkarki/node-graphql-typeorm-template.git"
+  },
+  "bugs":{
+    "url":"git@github.com:sugamkarki/node-graphql-typeorm-template/issues"
+  },
+  "homepage": "git@github.com:sugamkarki/node-graphql-typeorm-template#readme"
 }
